@@ -1,0 +1,42 @@
+const express = require('express');
+const userRoutes = require('./user.routes');
+const categoryRoutes = require('./category.routes');
+const couponRoutes = require('./coupon.routes');
+const enrollMentsRoutes = require('./enrollments.routes');
+const lectureRoutes = require('./lecture.routes');
+const localizationRoutes = require('./localization.routes');
+const notificationRoutes = require('./notification.routes');
+const orderRoutes = require('./order.routes');
+const pageRoutes = require('./page.routes');
+const ratingRoutes = require('./rating.routes');
+const sectionRoutes = require('./section.routes');
+const transactionRoutes = require('./transactions.routes');
+const walletRoutes = require('./wallet.routes');
+const coursesRoutes = require('./course.routes');
+const commentsRoutes = require('./comments.routes');
+const dashboardRoutes = require('./dashboard.routes');
+const settingsRoutes = require('./setting.routes');
+const bankRoutes = require('./bank.routes');
+
+const router = express.Router();
+
+router.use('/users', userRoutes);
+router.use('/courses', coursesRoutes);
+router.use('/categories', categoryRoutes);
+router.use('/coupons', couponRoutes);
+router.use('/enrollments', enrollMentsRoutes);
+router.use('/lectures', lectureRoutes);
+router.use('/localizations', localizationRoutes);
+router.use('/notifications', notificationRoutes);
+router.use('/orders', orderRoutes);
+router.use('/pages', pageRoutes);
+router.use('/ratings', ratingRoutes);
+router.use('/sections', sectionRoutes);
+router.use('/transactions', transactionRoutes);
+router.use('/wallets', walletRoutes);
+router.use('/comments', commentsRoutes);
+router.use('/dashboard', dashboardRoutes);
+router.use('/settings', settingsRoutes);
+router.use('/bank', bankRoutes);
+
+module.exports = router;
